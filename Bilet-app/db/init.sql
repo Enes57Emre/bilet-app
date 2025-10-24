@@ -53,12 +53,12 @@ CREATE TABLE IF NOT EXISTS biletler (
 ) ENGINE=InnoDB;
 
 INSERT INTO firms (name, description) VALUES
-('Koru Turizm', 'Konforlu şehirlerarası yolculuk'),
+('Metre Turizm', 'Konforlu şehirlerarası yolculuk'),
 ('Anka Seyahat', 'Türkiye genelinde hızlı ulaşım');
 
 INSERT INTO users (name, email, password, role, balance, firm_id) VALUES
 ('Sistem Yöneticisi', 'admin@site.com', '123456', 'admin', 0, NULL),
-('Koru Firma Admin', 'firma@site.com', '123456', 'firma_admin', 0, 1),
+('Metre Firma Admin', 'firma@site.com', '123456', 'firma_admin', 0, 1),
 ('Test Kullanıcı', 'user@site.com', '123456', 'user', 500, NULL);
 
 INSERT INTO seferler (firm_id, from_city, to_city, date, time, price, total_seats) VALUES
@@ -68,6 +68,6 @@ INSERT INTO seferler (firm_id, from_city, to_city, date, time, price, total_seat
 
 INSERT INTO coupons (code, discount_rate, usage_limit, firm_id, valid_until) VALUES
 ('GLOBAL10', 10, 100, NULL, DATE_ADD(CURDATE(), INTERVAL 60 DAY)),
-('KORU20', 20, 50, 1, DATE_ADD(CURDATE(), INTERVAL 60 DAY));
+('TEK50', 20, 50, 1, DATE_ADD(CURDATE(), INTERVAL 60 DAY));
 
 ALTER TABLE biletler ADD COLUMN canceled_at DATETIME NULL;
