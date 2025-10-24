@@ -36,6 +36,3 @@ Bu proje, kullanıcıların otobüs seferleri için **koltuk seçerek online bil
 | **Docker (opsiyonel)** | Dağıtım kolaylığı |
 
 ---
-
-## 📂 Proje Klasör Yapısı (Özet)
-
