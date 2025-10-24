@@ -1,0 +1,8 @@
+{
+  "name": "bilet/proje",
+  "description": "Bilet satin alma platformu",
+  "type": "project",
+  "require": {
+    "dompdf/dompdf": "^2.0"
+  }
+}
